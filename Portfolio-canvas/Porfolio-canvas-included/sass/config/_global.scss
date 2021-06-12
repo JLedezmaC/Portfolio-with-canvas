@@ -1,0 +1,52 @@
+*{
+  color: white;
+}
+
+body{
+  z-index: 2;
+  background-color: #0b0b0b;
+  font-family: 'Abhaya Libre', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.main-wrapper{
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.second-wrapper{
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.shake:hover{
+  animation: shaking 1s ease-in;
+}
+
+@keyframes shaking{
+  0%{
+    transform: translate(0);
+  }
+  20%,
+  40%,
+  60%,
+  80%{
+    transform: translate(1rem);
+  }
+}
+
+canvas{
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 1;
+}
+
+$white: #DBEDF3;
+$white-font: $white;
